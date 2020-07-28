@@ -14,8 +14,9 @@ class Song < ActiveRecord::Base
         a.name
     end
     if x.exclude?("Drake")
-      drake = Artist.create(name: "Drake")
+      drake = self.create_artist(name: "Drake")
     end
+    
     self.artist = drake
 
   end
