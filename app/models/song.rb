@@ -13,8 +13,8 @@ class Song < ActiveRecord::Base
     x = Artist.all.map do |a|
         a.name
     end
-    if x.exclude?("Bob")
-      drake = Artist.create(name: "Bob")
+    if x.exclude?("Drake")
+      drake = Artist.create(name: "Drake")
     end
     self.artist = drake
 
