@@ -16,7 +16,7 @@ class Song < ActiveRecord::Base
     if x.exclude?("Drake")
       drake = self.create_artist(name: "Drake")
     end
-    
+
     self.artist = drake
 
   end
